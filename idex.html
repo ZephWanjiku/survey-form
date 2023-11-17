@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">build and reviewed by zephaniah</p>
+    
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="name" required>
+        
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" placeholder="email" id="email" name="email" required>
+        
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" id="number" name="number" placeholder="number" min="0" max="100">
+        
+        <fieldset>
+            <legend>Select one or more options:</legend>
+            <input type="radio" id="option1" name="optionsGroup1" value="option1">
+            <label for="option1">Option 1</label>
+            
+            <input type="radio" id="option2" name="optionsGroup1" value="option2">
+            <label for="option2">Option 2</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Select another option:</legend>
+            <input type="radio" id="option3" name="optionsGroup2" value="option3">
+            <label for="option3">Option 3</label>
+            
+            <input type="radio" id="option4" name="optionsGroup2" value="option4">
+            <label for="option4">Option 4</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Select at least two options:</legend>
+            <input type="checkbox" id="checkbox1" name="checkboxGroup" value="checkbox1">
+            <label for="checkbox1">Checkbox 1</label>
+            
+            <input type="checkbox" id="checkbox2" name="checkboxGroup" value="checkbox2">
+            <label for="checkbox2">Checkbox 2</label>
+            
+            <input type="checkbox" id="checkbox3" name="checkboxGroup" value="checkbox3">
+            <label for="checkbox3">Checkbox 3</label>
+        </fieldset>
+        
+        <label for="dropdown">Choose from the dropdown:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3" disabled>Option 3 (Disabled)</option>
+        </select>
+        
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
